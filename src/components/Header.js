@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button, Col, Container, Form, Nav, Navbar, Offcanvas, Row } from "react-bootstrap"
-import { DoorOpen, House, InputCursorText, List, PersonVideo2 } from "react-bootstrap-icons"
+import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { CameraReelsFill, DoorOpen, House, InputCursorText, List, PersonVideo2 } from "react-bootstrap-icons"
 
 export default function Header() {
     const [show, setShow] = useState(false);
@@ -23,7 +23,9 @@ export default function Header() {
                         </Button>
                     </Navbar.Brand>
                     <Nav>
-                        <Nav.Link href="">THEATRUM</Nav.Link>
+                        <Nav.Link className="d-flex align-items-center">
+                            <CameraReelsFill className="me-2" /> THEATRUM
+                        </Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link className="d-flex align-items-center">
@@ -43,7 +45,9 @@ export default function Header() {
                 data-bs-theme="dark"
             >
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>THEATRUM</Offcanvas.Title>
+                    <Offcanvas.Title className="d-flex align-items-center">
+                        <CameraReelsFill className="me-2" /> THEATRUM
+                    </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body className="flex-grow-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
